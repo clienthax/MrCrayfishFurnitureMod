@@ -1,7 +1,6 @@
 package com.mrcrayfish.furniture.proxy;
 
 import com.mrcrayfish.furniture.client.GifCache;
-import com.mrcrayfish.furniture.handler.ClientEvents;
 import com.mrcrayfish.furniture.handler.GuiDrawHandler;
 import com.mrcrayfish.furniture.handler.InputHandler;
 import com.mrcrayfish.furniture.init.FurnitureBlocks;
@@ -149,7 +148,6 @@ public class ClientProxy extends CommonProxy
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new InputHandler());
         MinecraftForge.EVENT_BUS.register(new GuiDrawHandler());
-        MinecraftForge.EVENT_BUS.register(new ClientEvents());
     }
 
     @SubscribeEvent
